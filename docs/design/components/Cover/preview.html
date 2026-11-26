@@ -1,0 +1,48 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>SoundDive</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=IBM+Plex+Sans+KR:wght@500&display=swap">
+<style>
+  html, body { margin: 0; height: 100%; }
+  body { background: var(--espresso, #221b16); color: var(--cream, #f2e6d0); overflow: hidden; }
+  .cover { position: relative; width: 960px; height: 288px; overflow: hidden; }
+  .art { position: absolute; top: 0; left: 480px; width: 480px; height: 288px; overflow: hidden; }
+  .art svg { display: block; width: 480px; height: 288px; }
+  .cream { fill: var(--cream, #f2e6d0); }
+  .tan { fill: var(--tan, #b29878); }
+  .deep { fill: var(--espresso-dark, #120e0c); }
+  .signal { fill: var(--signal-orange, #f4722e); }
+  .words { position: absolute; left: var(--space-40, 40px); bottom: var(--space-40, 40px); max-width: 440px; }
+  .name { margin: 0; font-family: var(--font-display, "Bricolage Grotesque", "IBM Plex Sans KR", sans-serif); font-weight: 800; font-size: 80px; line-height: .92; letter-spacing: -1.2px; color: var(--cream, #f2e6d0); }
+  .tag { margin: var(--space-16, 16px) 0 0 3px; font-family: var(--font-kr, "IBM Plex Sans KR", sans-serif); font-weight: 500; font-size: 14px; line-height: 20px; letter-spacing: 0.14em; color: var(--tan, #b29878); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 288" width="480" height="288">
+<!--
+  blocks      cream 416×96 bled off the top and right (소리, 가장 넓은 면) · tan 160×176 bled off the bottom · espresso-dark 304×176 bled off the right and bottom (수면 아래) · signal-orange disc ⌀40 once (물방울, 유일한 고채도) — ≈ 40% of 960×288
+  arrangement 마크를 위에서 아래로 읽는 순서 그대로: 위의 cream 띠(Sound), 아래의 tan·espresso-dark 면(Dive), 그 사이에 떨어지는 signal-orange 물방울
+  pattern     literal motif → 위가 열린 파문 초승달 3겹(안쪽 signal-orange, 바깥 cream), README의 '울림' 단계와 '물은 굵기가 변하는 면' 규칙에서 — 앞이 두껍고 양끝이 뾰족한 이 브랜드만의 모양
+  scales      sides in space-16 multiples; gutters space-16; drop ⌀ space-40 with radius-round; crescent thickness 8·10·12 on a space-4 step
+-->
+<rect class="cream" x="64" y="-16" width="432" height="112"/>
+<rect class="tan" x="0" y="112" width="160" height="192"/>
+<rect class="deep" x="176" y="112" width="320" height="192"/>
+<path class="cream" d="M200,208 A128,52 0 0 0 456,208 A128,40 0 0 1 200,208 Z"/>
+<path class="cream" d="M240,208 A88,36 0 0 0 416,208 A88,26 0 0 1 240,208 Z"/>
+<path class="signal" d="M280,208 A48,20 0 0 0 376,208 A48,12 0 0 1 280,208 Z"/>
+<circle class="signal" cx="328" cy="176" r="20"/>
+</svg>
+</div>
+<div class="words">
+<h1 class="name">SoundDive</h1>
+<p class="tag">한걸음 더, 소리 속으로</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!-- @dsCard group="행동" height=260 subtitle="주 행동 · 보조 · 글자 · 작게 · 비활성" -->
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Button — preview</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap">
+<style>
+html, body { margin: 0; }
+body { padding: 28px 32px; }
+.demo { display: flex; flex-direction: column; gap: 22px; }
+.demo-row { display: flex; flex-wrap: wrap; align-items: center; gap: 20px 28px; }
+.demo-cell { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.demo-cap { font-size: 12px; letter-spacing: 0.08em; color: var(--ink-muted, #b29878); }
+</style>
+</head>
+<body class="sd-root">
+<div class="demo" id="root">
+<div class="demo-row">
+<div class="demo-cell"><a class="sd-btn sd-btn--primary" href="#">지원하기 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a><span class="demo-cap">주 행동 · 기본</span></div>
+<div class="demo-cell"><a class="sd-btn sd-btn--primary is-hover" href="#">지원하기 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a><span class="demo-cap">마우스 올림</span></div>
+<div class="demo-cell"><a class="sd-btn sd-btn--primary" style="box-shadow: var(--focus-ring, 0 0 0 2px #221B16, 0 0 0 4px #F2E6D0)" href="#">지원하기 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a><span class="demo-cap">키보드 포커스</span></div>
+</div>
+<div class="demo-row">
+<div class="demo-cell"><a class="sd-btn sd-btn--secondary" href="#">활동 둘러보기</a><span class="demo-cap">보조 · 기본</span></div>
+<div class="demo-cell"><a class="sd-btn sd-btn--secondary is-hover" href="#">활동 둘러보기</a><span class="demo-cap">마우스 올림</span></div>
+<div class="demo-cell"><a class="sd-btn sd-btn--text" href="#">자세히 보기 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a><span class="demo-cap">글자 버튼</span></div>
+<div class="demo-cell"><a class="sd-btn sd-btn--secondary sd-btn--sm" href="#">소식 받기</a><span class="demo-cap">작게(헤더)</span></div>
+<div class="demo-cell"><button class="sd-btn" type="button" disabled>모집 마감</button><span class="demo-cap">비활성</span></div>
+</div>
+</div>
+<script>
+  document.documentElement.lang = "ko";
+</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!-- @dsCard group="예시" height=3030 width=1280 subtitle="동아리 홈 예시: 헤더 · 첫 화면 · 소개 · 최근 활동 기록 · 함께하기 · 푸터 (예시 데이터)" -->
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>LandingPage — preview</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap">
+<style>
+html, body { margin: 0; }
+body { padding: 28px 32px; }
+.demo { display: flex; flex-direction: column; gap: 22px; }
+.demo-row { display: flex; flex-wrap: wrap; align-items: center; gap: 20px 28px; }
+.demo-cell { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.demo-cap { font-size: 12px; letter-spacing: 0.08em; color: var(--ink-muted, #b29878); }
+body { padding: 0; }
+</style>
+</head>
+<body class="sd-root">
+<div id="root">
+<header class="sd-header">
+<a class="sd-header__brand" href="#top">SoundDive</a>
+<nav class="sd-header__nav" aria-label="주 메뉴">
+<a class="sd-header__link" href="#about">소개</a>
+<a class="sd-header__link" href="#records" aria-current="page">활동 기록</a>
+<a class="sd-header__link" href="#join">함께하기</a>
+</nav>
+<a class="sd-btn sd-btn--secondary sd-btn--sm sd-header__cta" href="#join">인스타그램</a>
+<button class="sd-header__menu" type="button" aria-label="메뉴 열기"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></svg></button>
+</header>
+<section class="sd-hero sd-backdrop sd-grain">
+<img class="sd-hero__mark sd-rise" style="--sd-i:0" src="/_blob/9d5bf68cdc15d388a399358d47e39da3" alt="SoundDive 로고 마크: 음파가 한 줄기로 모여 물방울로 떨어지고, 수면에 파문이 번지는 모습">
+<h1 class="sd-display sd-hero__wordmark sd-rise" style="--sd-i:1">SoundDive</h1>
+<hr class="sd-hero__rule sd-rise" style="--sd-i:2">
+<p class="sd-hero__tagline sd-rise" style="--sd-i:3">한걸음 더, 소리 속으로</p>
+<p class="sd-lead sd-measure sd-rise" style="--sd-i:3; margin-top: var(--space-16, 16px)">서울·경기 대학생이 모여 LP카페와 리스닝룸에서 함께 음악을 듣는 연합동아리입니다.</p>
+<div class="sd-hero__actions sd-rise" style="--sd-i:4"><a class="sd-btn sd-btn--primary" href="#records">활동 기록 보기 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a><a class="sd-btn sd-btn--secondary" href="#about">동아리 소개</a></div>
+</section>
+<section class="sd-section" id="about">
+<div class="sd-container">
+<div class="sd-heading">
+<p class="sd-heading__label">소개</p>
+<h2 class="sd-heading__title">이런 동아리입니다</h2>
+<hr class="sd-heading__rule">
+</div>
+<div class="sd-facts" style="margin-top: var(--space-48, 48px)">
+<div class="sd-fact"><p class="sd-fact__label">누가</p><p class="sd-fact__text">서울·경기 여러 학교의 대학생이 모인 음악감상 연합동아리입니다.</p></div>
+<div class="sd-fact"><p class="sd-fact__label">무엇을</p><p class="sd-fact__text">LP카페와 리스닝룸을 찾아가고, 공간을 빌려 음감회를 열고, 음악이 있는 장소를 탐방합니다.</p></div>
+<div class="sd-fact"><p class="sd-fact__label">어떻게</p><p class="sd-fact__text">격주로 모입니다. 단톡방 투표로 참여 인원을 확인하고 장소를 정합니다.</p></div>
+</div>
+<p class="sd-statement" style="margin-top: var(--space-96, 96px); text-align: center">음악감상 <span class="sd-muted">=</span> 음악 <span class="sd-muted">+</span> <span class="sd-accent">감상</span></p>
+<p class="sd-lead sd-measure" style="margin: var(--space-24, 24px) auto 0; text-align: center">배경음악으로 흘려듣던 음악을, 같은 취향의 사람들과 끝까지 들어 봅니다.</p>
+</div>
+</section>
+<section class="sd-section" id="records" style="padding-top: 0">
+<div class="sd-container">
+<div class="sd-heading">
+<p class="sd-heading__label">활동 기록</p>
+<h2 class="sd-heading__title">최근에 함께 들은 날들</h2>
+<hr class="sd-heading__rule">
+</div>
+<div class="sd-grid sd-grid--3" style="margin-top: var(--space-48, 48px)">
+<article class="sd-entry"><div class="sd-frame sd-frame--placeholder sd-entry__media"><p class="sd-frame__note">활동 사진</p></div><div class="sd-entry__body"><p class="sd-entry__meta"><span class="sd-entry__type">LP카페</span><time>2026.12.19</time><span>망원동 LP카페 · 5명</span></p><h3 class="sd-entry__title">겨울 저녁, 재즈 피아노 한 장</h3><p class="sd-label">함께 들은 곡</p><ul class="sd-entry__tracks"><li>Bill Evans Trio — Waltz for Debby</li><li>Chet Baker — My Funny Valentine</li></ul><p class="sd-entry__note">한 장을 처음부터 끝까지 들으니 곡 사이의 정적까지 앨범의 일부로 들렸습니다.</p></div></article><article class="sd-entry"><div class="sd-frame sd-frame--placeholder sd-entry__media"><p class="sd-frame__note">활동 사진</p></div><div class="sd-entry__body"><p class="sd-entry__meta"><span class="sd-entry__type">음감회</span><time>2026.12.06</time><span>합정 대관 공간 · 7명</span></p><h3 class="sd-entry__title">각자 고른 한 곡과 그 이유</h3><p class="sd-label">함께 들은 곡</p><ul class="sd-entry__tracks"><li>부활 — 네버 엔딩 스토리</li><li>Ryuichi Sakamoto — Merry Christmas Mr. Lawrence</li></ul><p class="sd-entry__note">같은 곡도 고른 이유를 듣고 나니 다르게 들렸다는 이야기가 많았습니다.</p></div></article><article class="sd-entry"><div class="sd-frame sd-frame--placeholder sd-entry__media"><p class="sd-frame__note">활동 사진</p></div><div class="sd-entry__body"><p class="sd-entry__meta"><span class="sd-entry__type">탐방</span><time>2026.11.21</time><span>을지로 · 4명</span></p><h3 class="sd-entry__title">을지로 레코드숍 디깅</h3><p class="sd-label">함께 들은 곡</p><ul class="sd-entry__tracks"><li>Bill Evans Trio — Waltz for Debby</li></ul><p class="sd-entry__note">다음 음감회 주제를 여기서 고른 음반으로 정했습니다.</p></div></article>
+</div>
+<div style="margin-top: var(--space-40, 40px)"><a class="sd-btn sd-btn--text" href="#">활동 기록 전체 보기 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a></div>
+</div>
+</section>
+<section class="sd-section" id="join" style="padding-top: 0">
+<div class="sd-container">
+<div class="sd-card sd-card--raised" style="align-items: center; text-align: center; padding: var(--space-64, 64px) var(--space-32, 32px)">
+<p class="sd-label">함께하기</p>
+<h2 class="sd-heading__title">한걸음 더, 소리 속으로</h2>
+<p class="sd-lead">모집과 활동 소식은 인스타그램에 먼저 올립니다.</p>
+<div style="margin-top: var(--space-16, 16px)"><a class="sd-btn sd-btn--secondary" href="#">인스타그램 열기 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a></div>
+</div>
+</div>
+</section>
+<footer class="sd-footer">
+<div>
+<p class="sd-footer__wordmark">SoundDive</p>
+<p class="sd-footer__tagline">한걸음 더, 소리 속으로</p>
+</div>
+<div class="sd-footer__meta">
+<p>서울·경기 대학생 음악감상 연합동아리</p>
+<p>Instagram <a class="sd-link" href="#">@sounddive.listening</a></p>
+</div>
+</footer>
+</div>
+<script>
+  document.documentElement.lang = "ko";
+</script>
+</body>
+</html>

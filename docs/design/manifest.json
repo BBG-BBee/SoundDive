@@ -1,0 +1,261 @@
+{
+  "manifestVersion": 3,
+  "name": "SoundDive",
+  "namespace": "SoundDive",
+  "files": [
+    "01-philosophy.md",
+    "02-web.md",
+    "03-media.md",
+    "assets/Icons/README.md",
+    "assets/Logos/README.md",
+    "components/ActivityArchive/README.md",
+    "components/ActivityEntry/README.md",
+    "components/Button/README.md",
+    "components/Card/README.md",
+    "components/Hero/README.md",
+    "components/LandingPage/README.md",
+    "components/Lockup/README.md",
+    "components/PhotoFrame/README.md",
+    "components/SectionHeading/README.md",
+    "components/SiteFooter/README.md",
+    "components/SiteHeader/README.md",
+    "components/Tag/README.md",
+    "components/Timeline/README.md",
+    "components/bundle.css",
+    "tokens.css"
+  ],
+  "libraries": [],
+  "components": [
+    {
+      "name": "ActivityArchive",
+      "group": "예시",
+      "summary": "활동 기록을 모아 보는 페이지 예시로, 운영진이 모임이 끝날 때마다 한 건씩 쌓고 처음 온 사람은 위에서부터 훑어보며 동아리를 파악합니다."
+    },
+    {
+      "name": "ActivityEntry",
+      "group": "기록",
+      "summary": "모임 한 번을 한 장으로 남기는 기록 카드로, 사진 · 활동 종류 · 날짜 · 장소와 인원 · 제목 · 함께 들은 곡 · 한 줄 감상 순서입니다."
+    },
+    {
+      "name": "Button",
+      "group": "행동",
+      "summary": "행동을 요청하는 알약형 버튼으로, 화면에서 가장 중요한 행동 하나는 오렌지 면(주 행동), 나머지는 tan 테두리(보조)나 밑줄(글자 버튼)로 나눕니다."
+    },
+    {
+      "name": "Card",
+      "group": "콘텐츠",
+      "summary": "같은 종류의 항목을 나란히 비교하게 하는 테두리 카드로, 번호(영문 서체)·제목·분류·짧은 구분선·목록 순서입니다."
+    },
+    {
+      "name": "Hero",
+      "group": "브랜드",
+      "summary": "웹사이트 첫 화면으로, 포스터 락업(마크 → 워드마크 → 140px 구분선 → 한글 문구 → 행동)을 화면 폭에 맞게 다시 흘린 것입니다."
+    },
+    {
+      "name": "LandingPage",
+      "group": "예시",
+      "summary": "SoundDive 웹사이트 홈 예시로, 처음 들어온 사람이 1분 안에 \"누가, 무엇을, 어떻게 하는 동아리인지\"와 실제 활동 기록을 보게 하는 구성입니다. 이 시스템의 컴포넌트만으로 조립했습니다."
+    },
+    {
+      "name": "Lockup",
+      "group": "브랜드",
+      "summary": "마크·워드마크·구분선·한글 보조 문구·행동 문구를 위에서 아래로 쌓은 SoundDive의 기본 배치입니다."
+    },
+    {
+      "name": "PhotoFrame",
+      "group": "콘텐츠",
+      "summary": "사진·캡처·QR을 담는 모서리 둥근 틀로, 비어 있을 때는 점선과 설명을 보여 주고 사진이 들어가면 점선이 사라집니다."
+    },
+    {
+      "name": "SectionHeading",
+      "group": "글",
+      "summary": "섹션을 여는 머리 묶음으로, 작은 머리말과 제목, 그 아래 96px line 구분선이 한 세트입니다. 슬라이드의 제목 + 구분선과 같은 모양입니다."
+    },
+    {
+      "name": "SiteFooter",
+      "group": "탐색",
+      "summary": "페이지 맨 아래, 가장 어둡고 조용한 자리로, 워드마크와 태그라인, 동아리 정보와 연락처를 둡니다. 마크 서사의 마지막 단계('깊이')에 해당합니다."
+    },
+    {
+      "name": "SiteHeader",
+      "group": "탐색",
+      "summary": "모든 페이지 위에 고정되는 헤더로, 왼쪽에 워드마크, 오른쪽에 메뉴와 보조 버튼 하나를 둡니다."
+    },
+    {
+      "name": "Tag",
+      "group": "콘텐츠",
+      "summary": "짧은 분류나 주제를 알약 모양으로 묶는 태그로, 마크 선의 둥근 끝을 닮은 radius-pill 테두리입니다."
+    },
+    {
+      "name": "Timeline",
+      "group": "콘텐츠",
+      "summary": "기간과 순서를 보여 주는 한 줄 타임라인으로, 균일한 line 선 위에 점을 찍고 지금 위치 하나만 오렌지로 표시합니다."
+    }
+  ],
+  "assetGroups": [
+    {
+      "name": "Logos",
+      "tile": "l",
+      "order": [
+        "sounddive-mark.svg",
+        "sounddive-profile-1080.png"
+      ],
+      "files": [
+        {
+          "path": "assets/Logos/sounddive-mark.svg",
+          "id": "9d5bf68cdc15d388a399358d47e39da3"
+        },
+        {
+          "path": "assets/Logos/sounddive-profile-1080.png",
+          "id": "beedb1e19d840649132000101c610d88"
+        }
+      ]
+    },
+    {
+      "name": "Icons",
+      "tile": "s",
+      "order": [
+        "sounddive-favicon.svg",
+        "sounddive-favicon-fullbleed.svg",
+        "favicon.ico",
+        "favicon-16.png",
+        "favicon-32.png",
+        "favicon-48.png",
+        "icon-64.png",
+        "apple-touch-icon-180.png",
+        "icon-192.png",
+        "icon-512.png",
+        "icon-maskable-512.png"
+      ],
+      "files": [
+        {
+          "path": "assets/Icons/sounddive-favicon.svg",
+          "id": "c35dec0e5c35871f59358d81a48383a1"
+        },
+        {
+          "path": "assets/Icons/sounddive-favicon-fullbleed.svg",
+          "id": "753af4a25eeab9deb495f57dd5f3e0b9"
+        },
+        {
+          "path": "assets/Icons/favicon.ico",
+          "id": "48e683dd3ebd045a4d4a8b8c873d1caa"
+        },
+        {
+          "path": "assets/Icons/favicon-16.png",
+          "id": "4474ba1cf2058ed99fda47f74bc1d903"
+        },
+        {
+          "path": "assets/Icons/favicon-32.png",
+          "id": "64c91383727d904b269c3497da6d0582"
+        },
+        {
+          "path": "assets/Icons/favicon-48.png",
+          "id": "b3f6993516131176a3981223f92bba24"
+        },
+        {
+          "path": "assets/Icons/icon-64.png",
+          "id": "820b0d41d90b7a3f3896044fec20aa31"
+        },
+        {
+          "path": "assets/Icons/apple-touch-icon-180.png",
+          "id": "817b55a284661be0ea8ebcedbb7d81d2"
+        },
+        {
+          "path": "assets/Icons/icon-192.png",
+          "id": "58c75aa98587b873e8dea375e096ecf4"
+        },
+        {
+          "path": "assets/Icons/icon-512.png",
+          "id": "4ac823385084d5dc48f7491d412a6105"
+        },
+        {
+          "path": "assets/Icons/icon-maskable-512.png",
+          "id": "ed7a44ffbb7d3c83185fdfd90e99ecb7"
+        }
+      ]
+    }
+  ],
+  "storage": {
+    "files": {
+      "assets/Icons/apple-touch-icon-180.png": {
+        "store": "blob",
+        "id": "817b55a284661be0ea8ebcedbb7d81d2",
+        "bytes": 9420,
+        "type": "image/png"
+      },
+      "assets/Icons/favicon-16.png": {
+        "store": "blob",
+        "id": "4474ba1cf2058ed99fda47f74bc1d903",
+        "bytes": 760,
+        "type": "image/png"
+      },
+      "assets/Icons/favicon-32.png": {
+        "store": "blob",
+        "id": "64c91383727d904b269c3497da6d0582",
+        "bytes": 1778,
+        "type": "image/png"
+      },
+      "assets/Icons/favicon-48.png": {
+        "store": "blob",
+        "id": "b3f6993516131176a3981223f92bba24",
+        "bytes": 2805,
+        "type": "image/png"
+      },
+      "assets/Icons/favicon.ico": {
+        "store": "blob",
+        "id": "48e683dd3ebd045a4d4a8b8c873d1caa",
+        "bytes": 4917,
+        "type": "image/vnd.microsoft.icon"
+      },
+      "assets/Icons/icon-192.png": {
+        "store": "blob",
+        "id": "58c75aa98587b873e8dea375e096ecf4",
+        "bytes": 12719,
+        "type": "image/png"
+      },
+      "assets/Icons/icon-512.png": {
+        "store": "blob",
+        "id": "4ac823385084d5dc48f7491d412a6105",
+        "bytes": 38859,
+        "type": "image/png"
+      },
+      "assets/Icons/icon-64.png": {
+        "store": "blob",
+        "id": "820b0d41d90b7a3f3896044fec20aa31",
+        "bytes": 3908,
+        "type": "image/png"
+      },
+      "assets/Icons/icon-maskable-512.png": {
+        "store": "blob",
+        "id": "ed7a44ffbb7d3c83185fdfd90e99ecb7",
+        "bytes": 30626,
+        "type": "image/png"
+      },
+      "assets/Icons/sounddive-favicon-fullbleed.svg": {
+        "store": "blob",
+        "id": "753af4a25eeab9deb495f57dd5f3e0b9",
+        "bytes": 540,
+        "type": "image/svg+xml"
+      },
+      "assets/Icons/sounddive-favicon.svg": {
+        "store": "blob",
+        "id": "c35dec0e5c35871f59358d81a48383a1",
+        "bytes": 548,
+        "type": "image/svg+xml"
+      },
+      "assets/Logos/sounddive-mark.svg": {
+        "store": "blob",
+        "id": "9d5bf68cdc15d388a399358d47e39da3",
+        "bytes": 31332,
+        "type": "image/svg+xml"
+      },
+      "assets/Logos/sounddive-profile-1080.png": {
+        "store": "blob",
+        "id": "beedb1e19d840649132000101c610d88",
+        "bytes": 996740,
+        "type": "image/png"
+      }
+    },
+    "blobBytesUsed": 1134952
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": ["Bash(pnpm test)", "Bash(pnpm build)", "Bash(pnpm db:migrate:local)", "Bash(pnpm db:seed:local)"],
+    "ask": ["Bash(git push *)"],
+    "deny": [
+      "Read(./apps/admin/.dev.vars)",
+      "Edit(./apps/admin/.dev.vars)",
+      "Bash(wrangler *)",
+      "Bash(npx wrangler *)",
+      "Bash(pnpm exec wrangler *)"
+    ]
+  }
+}

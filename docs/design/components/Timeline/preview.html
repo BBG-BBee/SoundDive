@@ -1,0 +1,30 @@
+<!-- @dsCard group="콘텐츠" height=210 width=1000 subtitle="균일한 선 · 오렌지 현재 지점 · 다음(점선)" -->
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Timeline — preview</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap">
+<style>
+html, body { margin: 0; }
+body { padding: 28px 32px; }
+.demo { display: flex; flex-direction: column; gap: 22px; }
+.demo-row { display: flex; flex-wrap: wrap; align-items: center; gap: 20px 28px; }
+.demo-cell { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.demo-cap { font-size: 12px; letter-spacing: 0.08em; color: var(--ink-muted, #b29878); }
+</style>
+</head>
+<body class="sd-root">
+<div id="root" style="padding-top: 12px">
+<ol class="sd-timeline" aria-label="한 기수의 흐름">
+<li class="sd-timeline__item"><span class="sd-timeline__dot"></span><span class="sd-timeline__label">모집</span><span class="sd-timeline__note">지원서 · 전화 면접</span></li>
+<li class="sd-timeline__item"><span class="sd-timeline__dot"></span><span class="sd-timeline__label">OT</span><span class="sd-timeline__note">첫 만남 · 단톡방</span></li>
+<li class="sd-timeline__item sd-timeline__item--now"><span class="sd-timeline__dot"></span><span class="sd-timeline__label">정기 활동</span><span class="sd-timeline__note">지금 · 격주 모임</span></li>
+<li class="sd-timeline__item sd-timeline__item--next"><span class="sd-timeline__dot"></span><span class="sd-timeline__label">기수 마무리</span><span class="sd-timeline__note">기록 정리 · 다음 기수</span></li>
+</ol>
+</div>
+<script>
+  document.documentElement.lang = "ko";
+</script>
+</body>
+</html>

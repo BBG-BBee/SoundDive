@@ -1,0 +1,80 @@
+<!-- @dsCard group="브랜드" height=440 width=960 subtitle="포스터 · 프로필 · 썸네일" -->
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Lockup — preview</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=IBM+Plex+Sans+KR:wght@500;600&display=swap">
+<style>
+  html, body { margin: 0; }
+  body { background: var(--espresso, #221b16); font-family: var(--font-kr, "IBM Plex Sans KR", sans-serif); }
+  .row { display: flex; gap: 32px; align-items: flex-start; justify-content: center; padding: 24px 20px; }
+  .item { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+  .cap { font-size: 13px; letter-spacing: 0.08em; color: var(--tan, #b29878); }
+  .frame { position: relative; overflow: hidden; }
+  .board { position: absolute; left: 0; top: 0; transform-origin: 0 0; overflow: hidden; box-sizing: border-box; }
+  .grain { position: absolute; left: 0; top: 0; pointer-events: none; }
+
+  /* poster 1080×1350 → ×0.25 */
+  .f-poster { width: 270px; height: 337.5px; }
+  .poster { width: 1080px; height: 1350px; transform: scale(0.25); background: var(--backdrop-poster, radial-gradient(circle at 50% 36%, #30261F 0%, #221B16 42%, #120E0C 100%)); display: flex; flex-direction: column; align-items: center; padding-top: var(--space-140, 140px); }
+  .poster .mark { width: 640px; height: 694px; display: block; }
+  .poster .wm { margin: var(--space-40, 40px) 0 0; font-family: var(--font-display, "Bricolage Grotesque", "IBM Plex Sans KR", sans-serif); font-weight: 800; font-size: 132px; line-height: 1; letter-spacing: -2px; color: var(--cream, #f2e6d0); }
+  .poster .rule { width: 140px; height: var(--stroke-rule, 2px); margin-top: var(--space-44, 44px); background: var(--tan, #b29878); }
+  .poster .kr { margin: var(--space-30, 30px) 0 0; font-weight: 500; font-size: 40px; letter-spacing: 0.14em; color: var(--tan, #b29878); }
+  .poster .cta { margin: var(--space-18, 18px) 0 0; font-weight: 600; font-size: 30px; letter-spacing: 0.12em; color: var(--signal-orange, #f4722e); }
+
+  /* profile 1080×1080 → ×0.3125, circle crop */
+  .f-profile { width: 337.5px; height: 337.5px; border-radius: var(--radius-round, 50%); }
+  .profile { width: 1080px; height: 1080px; transform: scale(0.3125); background: var(--backdrop-profile, radial-gradient(circle at 50% 46%, #30261F 0%, #221B16 45%, #120E0C 100%)); }
+  .profile .mark { position: absolute; left: 107px; top: 89px; width: 869px; height: 942px; }
+
+  /* thumbnail 250×250 at actual size */
+  .f-thumb { width: 250px; height: 250px; }
+  .thumb { width: 250px; height: 250px; background: var(--backdrop-poster, radial-gradient(circle at 50% 36%, #30261F 0%, #221B16 42%, #120E0C 100%)); display: flex; flex-direction: column; align-items: center; padding-top: var(--space-16, 16px); }
+  .thumb .mark { width: 128px; height: 139px; display: block; }
+  .thumb .wm { margin: var(--space-4, 4px) 0 0; font-family: var(--font-display, "Bricolage Grotesque", "IBM Plex Sans KR", sans-serif); font-weight: 800; font-size: 36px; line-height: 1; letter-spacing: -0.6px; color: var(--cream, #f2e6d0); }
+  .thumb .cta { margin: var(--space-10, 10px) 0 0; font-weight: 600; font-size: 15px; line-height: 1.2; letter-spacing: 0.08em; color: var(--signal-orange, #f4722e); }
+</style>
+</head>
+<body>
+<div class="row" id="root">
+  <div class="item">
+    <div class="frame f-poster">
+      <div class="board poster">
+        <img class="mark" src="/_blob/9d5bf68cdc15d388a399358d47e39da3" alt="SoundDive 마크">
+        <p class="wm">SoundDive</p>
+        <div class="rule"></div>
+        <p class="kr">음악감상 연합동아리</p>
+        <p class="cta">1기 멤버 모집</p>
+        <svg class="grain" aria-hidden="true" width="1080" height="1350" style="opacity: var(--grain-opacity, 0.07)"><filter id="gPo"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="1080" height="1350" filter="url(#gPo)"/></svg>
+      </div>
+    </div>
+    <span class="cap">포스터 1080×1350</span>
+  </div>
+  <div class="item">
+    <div class="frame f-profile">
+      <div class="board profile">
+        <img class="mark" src="/_blob/9d5bf68cdc15d388a399358d47e39da3" alt="SoundDive 마크">
+        <svg class="grain" aria-hidden="true" width="1080" height="1080" style="opacity: var(--grain-opacity, 0.07)"><filter id="gPr"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="1080" height="1080" filter="url(#gPr)"/></svg>
+      </div>
+    </div>
+    <span class="cap">프로필 1080×1080 · 원형 크롭</span>
+  </div>
+  <div class="item">
+    <div class="frame f-thumb">
+      <div class="board thumb">
+        <img class="mark" src="/_blob/9d5bf68cdc15d388a399358d47e39da3" alt="SoundDive 마크">
+        <p class="wm">SoundDive</p>
+        <p class="cta">1기 멤버 모집</p>
+        <svg class="grain" aria-hidden="true" width="250" height="250" style="opacity: var(--grain-opacity-thumb, 0.05)"><filter id="gTh"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="250" height="250" filter="url(#gTh)"/></svg>
+      </div>
+    </div>
+    <span class="cap">썸네일 250×250 · 실제 크기</span>
+  </div>
+</div>
+<script>
+  document.documentElement.lang = 'ko';
+</script>
+</body>
+</html>

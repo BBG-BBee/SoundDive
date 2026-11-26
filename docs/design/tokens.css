@@ -1,0 +1,278 @@
+/* SoundDive — generated from tokens.json */
+:root, [data-theme="dark"] {
+  --espresso-light: #30261f; /* 배경 원형 그라데이션의 중심(0%). 어두운 방에서 조명이 마크를 비추는 자리입니다. 글자색으로는 쓰지 않습니다. */
+  --espresso: #221b16; /* 배경 원형 그라데이션의 중간 지점(포스터 42%, 프로필 45%). 단색 바탕이 필요할 때의 기본 바탕입니다. */
+  --espresso-dark: #120e0c; /* 배경 원형 그라데이션의 가장자리(100%). 화면 모서리 쪽으로 어두워지는 끝색입니다. */
+  --cream: #f2e6d0; /* 주선 색. 마크의 파형·바깥 파문, 워드마크 'SoundDive', 제목과 본문 글자. espresso-light 위 12.0:1, espresso 위 13.8:1, espresso-dark 위 15.5:1. */
+  --tan: #b29878; /* 보조선 색. 마크의 2·3열 선·줄기 시작·초승달, 140×2px 구분선, 한글 보조 문구와 캡션. espresso-light 위 5.4:1, espresso 위 6.2:1, espresso-dark 위 7.0:1. */
+  --signal-orange: #f4722e; /* 유일한 고채도 강조색. 마크에서는 물방울·안쪽 링·줄기 끝, 레이아웃에서는 행동을 요청하는 문구 한 줄에만 씁니다. espresso-light 위 5.1:1, espresso 위 5.9:1, espresso-dark 위 6.7:1. 캐러멜 쪽으로 탁하게 옮기지 않습니다. */
+  --surface: var(--espresso); /* 웹·문서의 기본 바탕(페이지 배경). 위에 ink, ink-muted, accent 글자를 올립니다. */
+  --surface-raised: var(--espresso-light); /* surface보다 한 단계 밝은 면: 눌린 버튼, 선택된 태그, 펼친 메뉴. surface와 명도 차가 작으므로(1.15:1) 경계는 line으로 함께 표시합니다. */
+  --surface-sunken: var(--espresso-dark); /* 한 단계 어두운 면: 사진·캡처 자리, 흐름도 상자, 코드·인용 상자. */
+  --ink: var(--cream); /* 제목과 본문 글자. surface 13.8:1, surface-raised 12.0:1, surface-sunken 15.5:1. */
+  --ink-muted: var(--tan); /* 보조 글자(설명·캡션·라벨·푸터)와 아이콘. surface 6.2:1, surface-raised 5.4:1, surface-sunken 7.0:1. */
+  --accent: var(--signal-orange); /* 화면당 한 곳의 초점: 주 행동 버튼의 면, 행동 문구 한 줄, 현재 위치 점. surface 5.9:1, surface-raised 5.1:1. */
+  --on-accent: var(--espresso-dark); /* accent 면 위의 글자와 아이콘(6.7:1). accent 위에 cream·tan 글자는 쓰지 않습니다(2.3:1 이하). */
+  --line: var(--tan); /* 의미가 있는 선: 입력·버튼 테두리, 카드 테두리, 구분선, 도식의 연결선. 모든 바탕에서 5.4:1 이상. */
+  --line-subtle: rgba(178, 152, 120, 0.28); /* 장식용 가는 구분선만(헤더 아래 선, 목록 사이 선). 바탕 대비 약 1.6:1이라 뜻을 전하는 테두리에는 쓰지 않습니다. */
+  --focus: var(--cream); /* 키보드 포커스 고리의 색. surface 색 2px 틈 바깥에 2px로 그려 어떤 면 위에서도 12:1 이상을 지킵니다(focus-ring). */
+  --focus-ring: 0 0 0 2px #221b16, 0 0 0 4px #f2e6d0; /* 버튼·링크·입력란의 :focus-visible. surface 색 2px 틈 + focus(cream) 2px 고리. */
+}
+:root {
+  --space-4: 4px; /* 썸네일: 마크와 워드마크 사이. */
+  --space-8: 8px; /* 웹: 묶음 안 가장 가까운 간격(라벨과 제목, 아이콘과 글자). */
+  --space-10: 10px; /* 썸네일: 워드마크와 행동 문구 사이. */
+  --space-12: 12px; /* 웹: 카드 안 요소 사이. */
+  --space-16: 16px; /* 썸네일: 위 여백(마크 시작점). */
+  --space-18: 18px; /* 포스터: 한글 보조 문구와 행동 문구 사이. */
+  --space-24: 24px; /* 웹: 그리드 간격, 카드와 카드 사이. */
+  --space-30: 30px; /* 포스터: 구분선과 한글 보조 문구 사이. */
+  --space-32: 32px; /* 웹: 카드 안쪽 여백, 헤더 메뉴 사이. */
+  --space-40: 40px; /* 포스터: 마크와 워드마크 사이. */
+  --space-44: 44px; /* 포스터: 워드마크와 구분선 사이. */
+  --space-48: 48px; /* 웹: 섹션 제목과 본문 사이. */
+  --space-56: 56px; /* 슬라이드: 제목 묶음과 본문 사이, 카드·메모 사이. */
+  --space-64: 64px; /* 웹: 모바일 섹션 위아래 여백. */
+  --space-96: 96px; /* 웹: 데스크톱 섹션 위아래 여백. 묶음 안(8) < 묶음 사이(24) < 섹션 사이(96)로 바깥으로 갈수록 넓힙니다. */
+  --space-128: 128px; /* 슬라이드(1920×1080)의 안쪽 여백. */
+  --space-140: 140px; /* 포스터: 위 여백(마크 시작점). */
+  --radius-round: 50%; /* 인스타그램 프로필의 원형 크롭. 마크는 원 지름의 85~90% 안에 둡니다. */
+  --radius-control: 12px; /* 웹의 입력란·작은 상자. */
+  --radius-frame: 16px; /* 사진·캡처·QR 자리(슬라이드·웹 공통). */
+  --radius-card: 24px; /* 카드와 흐름도 상자(슬라이드·웹 공통). */
+  --radius-pill: 40px; /* 알약형: 버튼과 태그(높이 80px 이하). 마크 선의 둥근 끝을 따릅니다. */
+  --stroke-mark: 29; /* 마크의 파형과 2·3열 선 굵기(828×828 작업 캔버스 단위, 캔버스의 약 3.5%). 둥근 끝, 둥근 이음. */
+  --stroke-rule: 2px; /* 포스터 구분선 140×2px, tan. */
+  --grain-opacity: 0.07; /* 포스터·프로필(1080px급) 그레인 불투명도. */
+  --grain-opacity-thumb: 0.05; /* 250px 썸네일 그레인 불투명도. */
+  --grain-frequency: 0.85; /* feTurbulence baseFrequency. */
+  --backdrop-poster: radial-gradient(circle at 50% 36%, #30261F 0%, #221B16 42%, #120E0C 100%); /* 포스터(1080×1350)와 썸네일(250×250) 배경. */
+  --backdrop-profile: radial-gradient(circle at 50% 46%, #30261F 0%, #221B16 45%, #120E0C 100%); /* 인스타그램 프로필(1080×1080) 배경. */
+  --backdrop-stage: radial-gradient(circle at 50% 50%, #30261F 0%, #221B16 30%, #120E0C 100%); /* 슬라이드의 표제 장(Q&A, Ice Breaking): 가운데 글자에만 빛이 모이는 좁은 조명. */
+  --container-max: 1200px; /* 콘텐츠 최대 폭(좌우 여백 포함 전). */
+  --container-text: 720px; /* 읽는 글의 최대 폭: 한글 한 줄 약 40자. */
+  --gutter-mobile: 20px; /* 768px 미만 화면의 좌우 여백. */
+  --gutter-tablet: 32px; /* 768px 이상 화면의 좌우 여백. */
+  --gutter-desktop: 48px; /* 1200px 이상 화면의 좌우 여백. */
+  --bp-tablet: 768px; /* 중단점: 이 폭부터 태블릿 배치(2~3열). */
+  --bp-desktop: 1200px; /* 중단점: 이 폭부터 데스크톱 배치(12열). */
+  --header-height: 72px; /* 상단 헤더 높이(모바일 60px). */
+  --font-display: "Bricolage Grotesque", "IBM Plex Sans KR", sans-serif;
+  --font-kr: "IBM Plex Sans KR", sans-serif;
+  --text-wordmark: 800 132px/1 var(--font-display); /* 포스터 워드마크, cream. 마크 아래 space-40. 다른 크기에서는 자간을 글자 크기의 약 -1.5%로 맞춥니다. */
+  --text-wordmark-thumb: 800 36px/1 var(--font-display); /* 250×250 썸네일 워드마크, cream. 마크 아래 space-4. */
+  --text-kr-label: 500 40px/1.4 var(--font-kr); /* 한글 보조 문구, tan. 구분선 아래 space-30. */
+  --text-cta: 600 30px/1.4 var(--font-kr); /* 행동을 요청하는 한 줄, signal-orange. 한글 보조 문구 아래 space-18. 한 화면에 한 줄만. */
+  --text-cta-thumb: 600 15px/1.2 var(--font-kr); /* 썸네일의 행동 문구, signal-orange. 워드마크 아래 space-10. */
+  --text-slide-display: 800 160px/1 var(--font-display); /* 영문 표제(표지 워드마크, Q&A, Ice Breaking), cream. 한 장에 하나. */
+  --text-slide-statement: 600 160px/1.15 var(--font-kr); /* 한 장을 한 단어·한 줄로 말하는 한글 표제, cream. */
+  --text-slide-title: 600 64px/1.2 var(--font-kr); /* 내용 슬라이드 제목, cream. 위 여백에 고정하고 아래에 96×stroke-rule tan 구분선. */
+  --text-slide-subhead: 600 40px/1.3 var(--font-kr); /* 카드 제목·이름·소제목, cream. */
+  --text-slide-lead: 500 30px/1.6 var(--font-kr); /* 설명 문장, tan. */
+  --text-slide-body: 500 30px/1.6 var(--font-kr); /* 본문과 목록, cream. */
+  --text-slide-label: 500 24px/1.4 var(--font-kr); /* 작은 머리말·캡션·푸터, tan. 슬라이드의 최소 글자 크기입니다. */
+  --text-slide-cta: 600 30px/1.4 var(--font-kr); /* 행동을 요청하는 한 줄, signal-orange. 한 장에 하나. */
+  --text-web-display: 800 4.5rem/1 var(--font-display); /* 첫 화면 워드마크와 짧은 영문 표제(72px). 모바일은 web-display-sm. */
+  --text-web-display-sm: 800 3rem/1 var(--font-display); /* 768px 미만 화면의 web-display(48px). */
+  --text-web-statement: 600 4.5rem/1.15 var(--font-kr); /* 한 줄로 말하는 한글 표제(72px). 섹션 하나에 하나. 모바일은 web-statement-sm. */
+  --text-web-statement-sm: 600 2.5rem/1.2 var(--font-kr); /* 768px 미만 화면의 web-statement(40px). */
+  --text-web-h1: 600 3rem/1.25 var(--font-kr); /* 페이지 제목(48px), 페이지당 하나. 모바일은 web-h1-sm. */
+  --text-web-h1-sm: 600 2rem/1.3 var(--font-kr); /* 768px 미만 화면의 web-h1(32px). */
+  --text-web-h2: 600 2rem/1.3 var(--font-kr); /* 섹션 제목(32px). 아래에 96px×stroke-rule line 구분선. 모바일은 1.625rem(26px). */
+  --text-web-h3: 600 1.375rem/1.45 var(--font-kr); /* 카드·소단락 제목(22px). */
+  --text-web-lead: 500 1.25rem/1.75 var(--font-kr); /* 섹션을 여는 설명 문장(20px), ink-muted. */
+  --text-web-body: 400 1.0625rem/1.8 var(--font-kr); /* 본문(17px), ink. 한 줄 길이는 container-text 안에서 한글 약 40자. */
+  --text-web-small: 400 0.875rem/1.65 var(--font-kr); /* 캡션·출처·푸터(14px), ink-muted. 웹의 최소 글자 크기. */
+  --text-web-label: 500 0.875rem/1.4 var(--font-kr); /* 섹션 머리말·카드 분류(14px, kr-label과 같은 자간), ink-muted. */
+  --text-web-button: 600 1rem/1 var(--font-kr); /* 버튼 글자(16px). 작은 버튼은 0.9375rem. */
+  --text-web-nav: 500 0.9375rem/1 var(--font-kr); /* 상단 메뉴 링크(15px), ink-muted → 마우스를 올리면 ink. */
+}
+.wordmark {
+  font-family: var(--font-display);
+  font-size: 132px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+.wordmark-thumb {
+  font-family: var(--font-display);
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -0.6px;
+}
+.kr-label {
+  font-family: var(--font-kr);
+  font-size: 40px;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+}
+.cta {
+  font-family: var(--font-kr);
+  font-size: 30px;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+.cta-thumb {
+  font-family: var(--font-kr);
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+.slide-display {
+  font-family: var(--font-display);
+  font-size: 160px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -2.4px;
+}
+.slide-statement {
+  font-family: var(--font-kr);
+  font-size: 160px;
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -3px;
+}
+.slide-title {
+  font-family: var(--font-kr);
+  font-size: 64px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+.slide-subhead {
+  font-family: var(--font-kr);
+  font-size: 40px;
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.slide-lead {
+  font-family: var(--font-kr);
+  font-size: 30px;
+  line-height: 1.6;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.slide-body {
+  font-family: var(--font-kr);
+  font-size: 30px;
+  line-height: 1.6;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.slide-label {
+  font-family: var(--font-kr);
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 3.4px;
+}
+.slide-cta {
+  font-family: var(--font-kr);
+  font-size: 30px;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 3.6px;
+}
+.web-display {
+  font-family: var(--font-display);
+  font-size: 4.5rem;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -0.015em;
+}
+.web-display-sm {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -0.015em;
+}
+.web-statement {
+  font-family: var(--font-kr);
+  font-size: 4.5rem;
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.web-statement-sm {
+  font-family: var(--font-kr);
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.web-h1 {
+  font-family: var(--font-kr);
+  font-size: 3rem;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.web-h1-sm {
+  font-family: var(--font-kr);
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.web-h2 {
+  font-family: var(--font-kr);
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+}
+.web-h3 {
+  font-family: var(--font-kr);
+  font-size: 1.375rem;
+  line-height: 1.45;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.web-lead {
+  font-family: var(--font-kr);
+  font-size: 1.25rem;
+  line-height: 1.75;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.web-body {
+  font-family: var(--font-kr);
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.web-small {
+  font-family: var(--font-kr);
+  font-size: 0.875rem;
+  line-height: 1.65;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.web-label {
+  font-family: var(--font-kr);
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+}
+.web-button {
+  font-family: var(--font-kr);
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+.web-nav {
+  font-family: var(--font-kr);
+  font-size: 0.9375rem;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}

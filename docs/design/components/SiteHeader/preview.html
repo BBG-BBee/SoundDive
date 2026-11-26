@@ -1,0 +1,41 @@
+<!-- @dsCard group="탐색" height=290 width=1200 subtitle="데스크톱 · 모바일(375px)" -->
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>SiteHeader — preview</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap">
+<style>
+html, body { margin: 0; }
+body { padding: 28px 32px; }
+.demo { display: flex; flex-direction: column; gap: 22px; }
+.demo-row { display: flex; flex-wrap: wrap; align-items: center; gap: 20px 28px; }
+.demo-cell { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.demo-cap { font-size: 12px; letter-spacing: 0.08em; color: var(--ink-muted, #b29878); }
+</style>
+</head>
+<body class="sd-root">
+<div class="demo" id="root" style="gap: 28px">
+<div class="demo-cell" style="align-items: stretch"><header class="sd-header">
+<a class="sd-header__brand" href="#top">SoundDive</a>
+<nav class="sd-header__nav" aria-label="주 메뉴">
+<a class="sd-header__link" href="#about">소개</a>
+<a class="sd-header__link" href="#records" aria-current="page">활동 기록</a>
+<a class="sd-header__link" href="#join">함께하기</a>
+</nav>
+<a class="sd-btn sd-btn--secondary sd-btn--sm sd-header__cta" href="#join">인스타그램</a>
+<button class="sd-header__menu" type="button" aria-label="메뉴 열기"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></svg></button>
+</header><span class="demo-cap">768px 이상: 메뉴 + 보조 버튼</span></div>
+<div class="demo-cell" style="width: 375px; align-items: stretch">
+<header class="sd-header" style="height: 60px; padding: 0 20px">
+<a class="sd-header__brand" href="#top">SoundDive</a>
+<button class="sd-header__menu" type="button" aria-label="메뉴 열기" style="display: inline-flex"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></svg></button>
+</header>
+<span class="demo-cap">768px 미만: 메뉴 버튼</span>
+</div>
+</div>
+<script>
+  document.documentElement.lang = "ko";
+</script>
+</body>
+</html>

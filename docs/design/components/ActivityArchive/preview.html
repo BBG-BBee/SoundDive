@@ -1,0 +1,65 @@
+<!-- @dsCard group="예시" height=1580 width=1280 subtitle="활동 기록 페이지 예시: 거르기 · 기수별 묶음 · 목록형 기록 (예시 데이터)" -->
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>ActivityArchive — preview</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap">
+<style>
+html, body { margin: 0; }
+body { padding: 28px 32px; }
+.demo { display: flex; flex-direction: column; gap: 22px; }
+.demo-row { display: flex; flex-wrap: wrap; align-items: center; gap: 20px 28px; }
+.demo-cell { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.demo-cap { font-size: 12px; letter-spacing: 0.08em; color: var(--ink-muted, #b29878); }
+body { padding: 0; }
+</style>
+</head>
+<body class="sd-root">
+<div id="root">
+<header class="sd-header">
+<a class="sd-header__brand" href="#top">SoundDive</a>
+<nav class="sd-header__nav" aria-label="주 메뉴">
+<a class="sd-header__link" href="#about">소개</a>
+<a class="sd-header__link" href="#records" aria-current="page">활동 기록</a>
+<a class="sd-header__link" href="#join">함께하기</a>
+</nav>
+<a class="sd-btn sd-btn--secondary sd-btn--sm sd-header__cta" href="#join">인스타그램</a>
+<button class="sd-header__menu" type="button" aria-label="메뉴 열기"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></svg></button>
+</header>
+<main class="sd-container">
+<div class="sd-pagehead">
+<p class="sd-label">활동 기록</p>
+<h1 class="sd-pagehead__title">함께 들은 날들</h1>
+<p class="sd-lead sd-measure">격주로 모여 LP카페와 리스닝룸을 찾고, 공간을 빌려 음감회를 엽니다. 모임마다 들은 곡과 감상을 남깁니다.</p>
+<div class="sd-tags" role="group" aria-label="활동 종류로 거르기" style="margin-top: var(--space-16, 16px)">
+<button class="sd-tag" type="button" aria-pressed="true">전체</button>
+<button class="sd-tag" type="button" aria-pressed="false">LP카페</button>
+<button class="sd-tag" type="button" aria-pressed="false">리스닝룸</button>
+<button class="sd-tag" type="button" aria-pressed="false">음감회</button>
+<button class="sd-tag" type="button" aria-pressed="false">탐방</button>
+</div>
+</div>
+<section class="sd-archive" style="padding-bottom: var(--space-96, 96px)">
+<div class="sd-archive__group">
+<h2 class="sd-archive__group-title">1기 <span>2026 겨울</span></h2>
+<article class="sd-entry sd-entry--row"><div class="sd-frame sd-frame--placeholder sd-entry__media"><p class="sd-frame__note">활동 사진</p></div><div class="sd-entry__body"><p class="sd-entry__meta"><span class="sd-entry__type">LP카페</span><time>2026.12.19</time><span>망원동 LP카페 · 5명</span></p><h3 class="sd-entry__title">겨울 저녁, 재즈 피아노 한 장</h3><p class="sd-label">함께 들은 곡</p><ul class="sd-entry__tracks"><li>Bill Evans Trio — Waltz for Debby</li><li>Chet Baker — My Funny Valentine</li></ul><p class="sd-entry__note">한 장을 처음부터 끝까지 들으니 곡 사이의 정적까지 앨범의 일부로 들렸습니다.</p></div></article><article class="sd-entry sd-entry--row"><div class="sd-frame sd-frame--placeholder sd-entry__media"><p class="sd-frame__note">활동 사진</p></div><div class="sd-entry__body"><p class="sd-entry__meta"><span class="sd-entry__type">음감회</span><time>2026.12.06</time><span>합정 대관 공간 · 7명</span></p><h3 class="sd-entry__title">각자 고른 한 곡과 그 이유</h3><p class="sd-label">함께 들은 곡</p><ul class="sd-entry__tracks"><li>부활 — 네버 엔딩 스토리</li><li>Ryuichi Sakamoto — Merry Christmas Mr. Lawrence</li></ul><p class="sd-entry__note">같은 곡도 고른 이유를 듣고 나니 다르게 들렸다는 이야기가 많았습니다.</p></div></article><article class="sd-entry sd-entry--row"><div class="sd-frame sd-frame--placeholder sd-entry__media"><p class="sd-frame__note">활동 사진</p></div><div class="sd-entry__body"><p class="sd-entry__meta"><span class="sd-entry__type">탐방</span><time>2026.11.21</time><span>을지로 · 4명</span></p><h3 class="sd-entry__title">을지로 레코드숍 디깅</h3><p class="sd-label">함께 들은 곡</p><ul class="sd-entry__tracks"><li>Bill Evans Trio — Waltz for Debby</li></ul><p class="sd-entry__note">다음 음감회 주제를 여기서 고른 음반으로 정했습니다.</p></div></article>
+</div>
+</section>
+</main>
+<footer class="sd-footer">
+<div>
+<p class="sd-footer__wordmark">SoundDive</p>
+<p class="sd-footer__tagline">한걸음 더, 소리 속으로</p>
+</div>
+<div class="sd-footer__meta">
+<p>서울·경기 대학생 음악감상 연합동아리</p>
+<p>Instagram <a class="sd-link" href="#">@sounddive.listening</a></p>
+</div>
+</footer>
+</div>
+<script>
+  document.documentElement.lang = "ko";
+</script>
+</body>
+</html>

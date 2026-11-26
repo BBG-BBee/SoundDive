@@ -1,0 +1,32 @@
+<!-- @dsCard group="콘텐츠" height=430 width=1000 subtitle="사진 자리 · 채운 사진 · 캡션" -->
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>PhotoFrame — preview</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap">
+<style>
+html, body { margin: 0; }
+body { padding: 28px 32px; }
+.demo { display: flex; flex-direction: column; gap: 22px; }
+.demo-row { display: flex; flex-wrap: wrap; align-items: center; gap: 20px 28px; }
+.demo-cell { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.demo-cap { font-size: 12px; letter-spacing: 0.08em; color: var(--ink-muted, #b29878); }
+</style>
+</head>
+<body class="sd-root">
+<div class="demo-row" id="root" style="align-items: flex-start; gap: 32px">
+<figure class="sd-figure">
+<div class="sd-frame sd-frame--placeholder" style="width: 420px; height: 315px"><p class="sd-frame__note">사진 자리<br>LP카페에서 함께 음악을 듣는 모습</p></div>
+<figcaption class="sd-figure__caption">비어 있는 자리: 점선과 설명</figcaption>
+</figure>
+<figure class="sd-figure">
+<div class="sd-frame" style="width: 315px; height: 315px"><img src="/_blob/beedb1e19d840649132000101c610d88" alt="SoundDive 인스타그램 프로필 이미지"></div>
+<figcaption class="sd-figure__caption">채운 사진: 상자를 가득 채움(cover)</figcaption>
+</figure>
+</div>
+<script>
+  document.documentElement.lang = "ko";
+</script>
+</body>
+</html>
